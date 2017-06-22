@@ -13,6 +13,7 @@ var app = new Application("objMap", example, function (param, next, error, progr
 
 app.info.addOption(new CommandOption("source", "src", "source json file path"));
 app.info.addOption(new CommandOption("destination", "desti", "destination swift file path"));
+app.info.addOption(new CommandOption("className", "", "class name of swift map class", true));
 
 
 /*

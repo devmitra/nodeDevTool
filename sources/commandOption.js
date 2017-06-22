@@ -3,7 +3,7 @@
  */
 
 
-var CommandOption = function (option, alternativeOptionsStr, usage) {
+var CommandOption = function (option, alternativeOptionsStr, usage, optional) {
     this.option = option;
     var firstChar = option[0];
     if (firstChar) {
@@ -14,6 +14,8 @@ var CommandOption = function (option, alternativeOptionsStr, usage) {
 
     this.alternativeOptions = this.alternativeOptionsStr.split("|");
     this.usgae = usage;
+
+    this.optional = optional || false;
 };
 
 CommandOption.prototype.description = function () {
