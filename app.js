@@ -66,7 +66,7 @@ var printMessages = function () {
                     var optional = cmdOption.optional;
 
                     if(!found && !optional) {
-                        console.error(" No param for option: " + option);
+                        console.error(" ** No param for option: " + option);
                         success = false;
                         break;
                     }

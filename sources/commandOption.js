@@ -7,7 +7,12 @@ var CommandOption = function (option, alternativeOptionsStr, usage, optional) {
     this.option = option;
     var firstChar = option[0];
     if (firstChar) {
-        this.alternativeOptionsStr = firstChar + "|" + alternativeOptionsStr
+        if (alternativeOptionsStr) {
+            this.alternativeOptionsStr = firstChar + "|" + alternativeOptionsStr;
+        } else {
+            this.alternativeOptionsStr = firstChar + "";
+        }
+
     } else {
         this.alternativeOptionsStr = alternativeOptionsStr;
     }
