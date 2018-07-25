@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Set of node js dev utility ",
   "main": "index.js",
+  "requireNode": "6.7.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,6 +16,7 @@
     "babel-cli": "^6.2.0",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.1.18",
     "chai": "^3.4.1",
     "mocha": "^2.3.4"

@@ -36,7 +36,7 @@ var printMessages = function () {
 
 // Parsing commands
 (function PARSE() {
-    var appName = argv["app"] || argv["a"]
+    var appName = argv["app"] || argv["a"];
     for(var app in AppInfo) {
         var application = AppInfo[app];
         if (app === appName) {
