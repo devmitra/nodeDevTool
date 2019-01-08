@@ -1,23 +1,26 @@
 {
   "name": "node_dev_tools",
   "version": "0.0.1",
-  "description": "Set of node js dev utility ",
+  "description": "Set of node js dev utility. Also prodution deployment of babel as per scripts",
   "main": "index.js",
   "requireNode": "6.7.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel sources -d dist",
+    "start": "npm run build && node dist/index.js",
+    "debug": "babel-node sources/index.js"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "nodemailer": "^5.0.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.2.0",
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.1.18",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "chai": "^3.4.1",
     "mocha": "^2.3.4"
   }

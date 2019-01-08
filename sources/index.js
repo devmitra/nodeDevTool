@@ -1,5 +1,5 @@
 /**
- * Created by pushanmitra on 22/06/17.
+ * Created by pushanmitra on 24/12/18.
  */
 /*jslint node: true, es6: true,esversion: 6 */
 
@@ -7,7 +7,7 @@
  * Import / Require
  */
 import minimist from "minimist";
-import objMap from "./sources/objMap"
+import objMap from "./objMap";
 
 var argv = minimist(process.argv.slice(2));
 var appList = [];

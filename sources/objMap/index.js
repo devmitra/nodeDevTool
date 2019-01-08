@@ -1,3 +1,4 @@
+/*jslint node: true, es7: true,esversion: 6 */
 /**
  * Created by pushanmitra on 22/06/17.
  */

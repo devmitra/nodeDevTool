@@ -1,7 +1,7 @@
 /**
  * Created by pushanmitra on 22/06/17.
  */
-
+/*jslint node: true, es7: true,esversion: 6 */
 
 var CommandOption = function (option, alternativeOptionsStr, usage, optional) {
     this.option = option;

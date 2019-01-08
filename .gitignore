@@ -1,3 +1,7 @@
+
+# Dist
+/dist
+
 # NPM Dir
 node_modules/
 # Logs
@@ -61,4 +65,3 @@ typings/
 
 # WebStrom
 .idea/
-
